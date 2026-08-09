@@ -11,10 +11,11 @@ and_gate uut (
 );
 
 initial begin
-    $dumpfile("Grant.vcd");
+    $dumpfile("dump.vcd");
     $dumpvars(0, and_gate_tb);
 
     $display ("A B | Y");
+
 
     a = 0; b = 0; #10;
     $display("%b %b | %b", a, b, y);
